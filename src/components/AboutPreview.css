@@ -1,0 +1,152 @@
+.secondsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0;
+  padding: 0 40px;
+}
+
+.secondsection > div {
+  width: 30%;
+}
+
+/* Left Section - Matches Home Typography */
+.leftsection {
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.8;
+}
+
+.leftsection p {
+  margin-bottom: 20px;
+}
+
+/* Right Section - Matches Home Image Styling */
+.rightsection img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(170, 107, 228, 0.3);
+  transition: all 0.3s ease;
+}
+
+.rightsection img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(170, 107, 228, 0.5);
+}
+
+/* Heading - Matches Home Purple Color Scheme */
+.about {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.purple {
+  color: rgb(170, 107, 228);
+}
+
+.text-gray {
+  color: gray;
+}
+
+/* Enhanced bullet points with purple theme */
+.leftsection p {
+  position: relative;
+  padding-left: 25px;
+}
+
+.leftsection p::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: rgb(170, 107, 228);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Hover effects matching Home section interactivity */
+.leftsection p:hover {
+  color: #f0f0f0;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design - Matches Home Breakpoints */
+@media (max-width: 1100px) {
+  .secondsection {
+    padding: 0 30px;
+  }
+  
+  .secondsection > div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 900px) {
+  .secondsection {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 40px;
+    margin: 80px 0;
+  }
+
+  .secondsection > div {
+    width: 80%;
+  }
+
+  .leftsection {
+    text-align: left;
+  }
+
+  .about {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .leftsection p::before {
+    content: "•";
+  }
+}
+
+@media (max-width: 768px) {
+  .secondsection {
+    margin: 60px 0;
+    padding: 0 20px;
+  }
+  
+  .secondsection > div {
+    width: 90%;
+  }
+  
+  .about {
+    font-size: 2.2rem;
+  }
+  
+  .leftsection {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .secondsection {
+    margin: 50px 0;
+    padding: 0 15px;
+  }
+  
+  .secondsection > div {
+    width: 100%;
+  }
+  
+  .about {
+    font-size: 1.8rem;
+  }
+  
+  .leftsection {
+    font-size: 1rem;
+  }
+  
+  .leftsection p {
+    padding-left: 20px;
+  }
+}

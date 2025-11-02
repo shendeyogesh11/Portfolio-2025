@@ -1,0 +1,241 @@
+.modern-footer {
+  background: linear-gradient(135deg, #0a0a2a 0%, #030022 100%);
+  border-top: 1px solid rgba(170, 107, 228, 0.2);
+  padding: 25px 0 0 0;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 40px;
+}
+
+/* Left - Brand (Yogesh.dev) */
+.footer-brand {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brand-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff, rgb(170, 107, 228));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 5px;
+}
+
+.brand-tagline {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.social-link {
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a0aec0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.social-link:hover {
+  background: rgb(170, 107, 228);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Middle and Right Sections */
+.footer-sections-horizontal {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Quick Links - Center aligned */
+.footer-section:first-child {
+  align-items: center;
+}
+
+/* Get In Touch - Center aligned but content right-aligned */
+.footer-section:last-child {
+  align-items: center;
+}
+
+.section-title {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Horizontal layout for both sections */
+.horizontal-links,
+.horizontal-contact {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Quick Links alignment - centered */
+.horizontal-links {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Get In Touch alignment - centered container, right-aligned content */
+.horizontal-contact {
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.footer-link,
+.contact-link {
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  padding: 8px 0;
+}
+
+.footer-link:hover,
+.contact-link:hover {
+  color: white;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-link i {
+  width: 16px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(170, 107, 228, 0.3) 50%, 
+    transparent 100%);
+  margin-bottom: 10px;
+}
+
+.copyright {
+  text-align: center;
+  color: #718096;
+  font-size: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 0 30px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .footer-brand {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-sections-horizontal {
+    gap: 60px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .footer-section:first-child,
+  .footer-section:last-child {
+    align-items: center;
+  }
+  
+  .horizontal-links,
+  .horizontal-contact {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 0 20px;
+  }
+  
+  .brand-name {
+    font-size: 1.6rem;
+  }
+  
+  .footer-sections-horizontal {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .footer-section {
+    align-items: center;
+  }
+  
+  .horizontal-links,
+  .horizontal-contact {
+    gap: 15px;
+  }
+  
+  .footer-link,
+  .contact-link {
+    padding: 6px 0;
+  }
+}
